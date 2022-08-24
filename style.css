@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --lightblue:#316ec2;
+    --dblue: #043374;
+    --deepblue:#0e1b50;
+    --grey: #a7a9b6;
+    --darkgrey: #4c4c4c;
+
+    --lightskyblue: #f3f8ff;
+}
+
+.fw-littlebold{
+    font-weight: 500;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--dblue);
+
+    padding: 0;
+    margin: 0;
+}
+/* Start Header Section */
+.headerintros{
+    padding: 10px 0;
+    border-bottom: 1.5px solid #bbb;
+
+    display: flex;
+    justify-content: space-between;
+}
+.headerintros.con,.navbar.con{
+    width: 93%;
+    margin: auto;
+}
+
+@media(max-width: 575px){
+    .headerintros{
+        display: none;
+    }
+}
+
+/* Start nav bar  */
+.fquotebar{
+    /* position: relative; */
+
+    display: grid;
+    place-items: center;
+}
+.nav-link{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--dblue);
+}
+
+.quote{
+    display: flex;
+}
+
+.callqs{
+    display: flex;
+}
+.callqs .fas{
+    font-size: 30px;
+}
+
+.callqs span{
+    color: var(--grey);
+}
+
+.quote{
+    float: right;
+
+    position: absolute;
+    right: 4%;
+    bottom: 13%;
+}
+
+.buttcol{
+    width: 100%;
+    background-color: var(--darkgrey);
+
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.buttcol span{
+    background-color: #222;
+    color: #fff;
+    padding: 2px 8px;
+    
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+}
+
+@media(max-width: 1200px){
+    .quote button{
+        display: none;
+    }
+}
+@media(max-width: 575px){
+    .callqs{
+        display: none;
+    }
+}
+/* End nav bar */
+
+/* Start Banner */
+.banners{
+    height: 100vh;
+    background-image: url('./assets/img/people.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.bars{
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.banners p{
+    font-weight: 400;
+}
+
+.btn-style{
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+
+    position: relative;
+    z-index: 3;
+
+    transition: border-color .5s;
+    overflow: hidden;
+}
+
+.btn-style::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightblue);
+    transform: translateX(-100%);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    transition: all .5s;
+}
+.btn-style:hover::before{
+    transform: translateX(0%);
+}
+.banners .btn:hover{
+    border-color: var(--dblue);
+}
+/* End Banner */
+/* End Header Section */
+
+/* Start Satisfaction Section */
+.satis{
+    color: #fff;
+    background-color: var(--deepblue);
+    padding: 30px;
+}
+
+.lbtn{
+    display: flex;
+    align-items: center;
+}
+.btn-blues{
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn-blues:hover{
+    background-color: var(--lightblue);
+    border-color: var(--lightblue);
+}
+/* End Satisfaction Section */
+
+/* Start Industry Section */
+.minititles{
+    color: blue;
+    font-size: small;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.industrytitle > p:last-child{
+    color: #333;
+    font-size: large;
+    font-weight: 400;
+}
+
+.findouts a{
+    text-decoration: none;
+    opacity: 0;
+
+    transition: opacity .5s;
+}
+
+.industry-items{
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+
+    position: relative;
+    z-index: 2;
+
+    overflow: hidden;
+    transition: box-shadow .5s;
+}
+
+.industry-items::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightskyblue);
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.industry-items::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateY(100%);
+    transform-origin: bottom;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+    transition: all .5s;
+}
+.industry-items:hover::after{
+    background-color: #fff;
+    transform: translateY(0);
+
+}
+.industry-items:hover .findouts a{
+    opacity: 1;
+}
+.industry-items:hover{
+    box-shadow: 5px 12px 30px #ccc;
+}
+/* End Industry Section */
+
+/* Start AboutUs section */
+
+.psmallfonts{
+    font-size: 17px;
+}
+/* End AboutUs Section */
+
+/* Start Services Section */
+.services{
+    background-color: var(--lightskyblue);
+    padding: 80px;
+
+}
+.card{
+    border: none;
+
+}
+/* End Services Section */
+
+/* Start Partnership Section */
+.partnertxts{
+    padding: 70px;
+    background-color: var(--dblue);
+}
+.partnertxts h6{
+    font-size: 17px;
+    font-weight: 400;
+}
+.partnerimgs{
+    padding: 0;
+}
+/* End Partnership Section */
