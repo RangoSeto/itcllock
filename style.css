@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500&display=swap');
 
 :root{
-    --lightblue:#316ec2;
+    --lightblue:#5f8fd3;
     --dblue: #043374;
     --deepblue:#0e1b50;
     --grey: #a7a9b6;
@@ -143,7 +143,7 @@ body{
     overflow: hidden;
 }
 
-.btn-style::before{
+.btn-style::before,.btn-fullblues::before{
     content: '';
     width: 100%;
     height: 100%;
@@ -157,7 +157,7 @@ body{
 
     transition: all .5s;
 }
-.btn-style:hover::before{
+.btn-style:hover::before,.btn-fullblues:hover::before{
     transform: translateX(0%);
 }
 .banners .btn:hover{
@@ -190,7 +190,7 @@ body{
 /* Start Industry Section */
 .minititles{
     color: blue;
-    font-size: small;
+    font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -264,6 +264,23 @@ body{
 .psmallfonts{
     font-size: 17px;
 }
+
+.btn-fullblues{
+    background-color: #2a69bf;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+
+    position: relative;
+    z-index: 3;
+
+    overflow: hidden;
+}
+.btn-fullblues:hover{
+    color: #fff;
+    background-color: #2a69bf;
+    border:none;
+}
 /* End AboutUs Section */
 
 /* Start Services Section */
@@ -290,4 +307,126 @@ body{
 .partnerimgs{
     padding: 0;
 }
+
+.bordersliders{
+    border-bottom: 1px solid #a0b3cc;
+}
 /* End Partnership Section */
+
+/* Start testimonial Section */
+.feedbacks{
+    background-color: var(--lightskyblue);
+}
+
+.testfbs{
+    background-color: #fff;
+    padding: 35px 20px;
+}
+
+.stars{
+    color: #316ec2;
+    padding: 20px 0;
+}
+.testfbs p{
+    color: #4c4c4c;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.testfbs small{
+    font-weight: 500;
+}
+/* End Testimonial Section */
+
+/* Start Adv Section */
+.advs{
+    background-color: var(--dblue);
+    padding: 80px 0;
+}
+
+/* End Adv Section */
+
+/* Start Footer Section */
+
+.footers{
+    padding: 70px 0 20px 20px;
+    
+}
+.btn-group{
+    width: 100%;
+}
+.btn-group input{
+    width: 80%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+.btn-group .btn{
+    border-radius: 0 3px 3px 0;
+}
+
+.footer-links{
+    color: #5f5b5b;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+    display: block;
+}
+.footer-links:hover{
+    color: inherit;
+    text-decoration: underline;
+}
+
+.fbicon,.yticon,.linicon,.instraicon{
+    background-color: var(--dblue);
+    color: #fff;
+    display: inline;
+    padding: 8px 11px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    float: left;
+}
+.yticon{
+    background-color: red;
+}
+.linicon{
+    background-color: var(--lightblue);
+}
+
+.contacts{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a0b3cc;
+}
+
+/* .socialicons i::before{
+    content: '';
+    transform: translateX(0deg);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.socialicons i:hover::before{
+    transform: translateX(360deg);
+} */
+
+.socialicons .fbicon::before{
+    content: '';
+    transform: rotateX(0deg);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transition: all .5s;
+}
+
+.socialicons .fbicon:hover::before{
+    transform: rotateX(1turn);
+}
+
+/* End Footer Section */
