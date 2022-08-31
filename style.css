@@ -163,6 +163,29 @@ body{
 .banners .btn:hover{
     border-color: var(--dblue);
 }
+
+.frombot{
+    animation-name: mybanner;
+    animation-duration: 2s;
+}
+.frombotbtn{
+    animation-name: mybanner;
+    animation-duration: 2s;
+    animation-delay: .8s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes mybanner{
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 /* End Banner */
 /* End Header Section */
 
@@ -430,3 +453,84 @@ body{
 }
 
 /* End Footer Section */
+
+
+/* Start animation backtotop */
+ .arrowup{
+    background-color: var(--lightblue);
+    color: #fff;
+    font-size: 40px;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+
+    padding: 0 18px;
+    
+    position: fixed;
+    left: 94%;
+    bottom: 2%;
+
+}
+
+.arrowup a{
+    color: #fff;
+}
+/* .arrowup::before{
+    content: "\f106";
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    font-family: "Font Awesome 5 Pro";
+
+    position: absolute;
+    left: 30%;
+    top: -8%;
+    
+}
+
+.arrowup::after{
+    content: "\f106";
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    font-family: "Font Awesome 5 Pro";
+
+    position: absolute;
+    left: 33%;
+    top: 27%;
+    
+}  */
+/*
+.arrowup i{
+    animation-name: myanitop;
+    animation-duration: 1s;*/
+    /* animation-timing-function: ease-in-out; */
+    /* animation-iteration-count: infinite;
+}
+.arrowup i::before{
+    animation-name: myanitop;
+    animation-duration: 1s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-iteration-count: infinite;
+}
+.arrowup i::after{
+    animation-name: myanitop;
+    animation-duration: 1s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-iteration-count: infinite;
+}
+
+@keyframes myanitop{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1
+    }
+    100%{
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+} */
+/* End animation backtotop */

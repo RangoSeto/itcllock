@@ -10,7 +10,7 @@ $(document).ready(function(){
     // });
     // End Header Section
 
-    $("#lightSlider").lightSlider({
+    $("#light-Slider").lightSlider({
         item: 5,
         slideMove: 1,
         slideMargin: 100,
@@ -31,7 +31,7 @@ $(document).ready(function(){
                   }
             }
         ]
-
+        
     });
 
     $("#testimonials").lightSlider();
