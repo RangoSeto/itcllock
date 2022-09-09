@@ -1,4 +1,4 @@
-# itcllock
+# itclock
 
 preview site
 https://itclock.netlify.app/
